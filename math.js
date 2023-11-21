@@ -41,25 +41,3 @@ function multiplicar(a, b) {
     let multiplicacao = a * b;
     resultado.innerHTML = multiplicacao;
 }
-
-let selectedIdioma = document.querySelector("#idioma");
-selectedIdioma.addEventListener("change", function() {
-    if(this.value == "br") {
-        btSoma.value = "Soma";
-        btdivisao.value = "Divisão";
-        btsubtracao.value = "Subtração";
-        btmultiplicacao.value = "Multiplicação";
-    }
-    else if (this.value == "en") {
-        btSoma.value = "Sum";
-        btdivisao.value = "Division";
-        btsubtracao.value = "Subtract";
-        btmultiplicacao.value = "Multiply";
-    }
-    else if (this.value == "es") {
-        btSoma.value = "suma";
-        btdivisao.value = "divisíon";
-        btsubtracao.value = "sustraer";
-        btmultiplicacao.value = "multiplicar";
-    }
-})
